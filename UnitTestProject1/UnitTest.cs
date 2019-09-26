@@ -1,5 +1,7 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-namespace UnitTests
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace UnitTestProject1
 {
     [TestClass]
     public class UnitTest1
@@ -9,10 +11,10 @@ namespace UnitTests
         {
             var score = new Day9.Models.Score();
             const string input = "{}";
-            const int shoulBe = 1;
+            const int shouldBe = 1;
             var result = score.CountTotalScore(input);
 
-            Assert.AreEqual(result, shoulBe, $"result should be {shoulBe} but is {result}");
+            Assert.AreEqual(result, shouldBe, $"result should be {shouldBe} but is {result}");
         }
     }
 }
